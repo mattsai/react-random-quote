@@ -13,7 +13,7 @@ class App extends React.Component {
             const response = await axios.get('https://api.adviceslip.com/advice');
             const {advice }= response.data.slip;
             this.setState({quote:advice});
-            console.log('advice ',advice);
+            // console.log('advice ',advice);
         } catch (error) {
             console.error("Something went wrong App[18]",error);
         }
